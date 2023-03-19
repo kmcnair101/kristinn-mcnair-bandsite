@@ -1,1 +1,107 @@
-/*# sourceMappingURL=bio.css.map */
+@font-face {
+  font-family: "Avenir Next Bold";
+  src: url("../assets/Font/AvenirNextLTPro-Bold.otf") format("opentype"), url("../assets/Font/Alternative-Files/AvenirNextLTProBold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Avenir Next Demi";
+  src: url("../assets/Font/AvenirNextLTPro-Demi.otf") format("opentype"), url("../assets/Font/Alternative-Files/AvenirNextLTProDemi.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir Next Regular";
+  src: url("../assets/Font/AvenirNextLTPro-Regular.otf") format("opentype"), url("../assets/Font/Alternative-Files/AvenirNextLTPro.ttf") format("truetype");
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #323232;
+  width: 100%;
+}
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  font-family: Avenir;
+}
+.header__menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  padding-top: 1.1rem;
+  padding-bottom: 0.5rem;
+  font-family: "Avenir Next Bold";
+}
+.header__logo {
+  height: 2.5rem;
+}
+
+.header__menu-item, .header__menu-link {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  color: #FFFFFF;
+}
+
+.hero {
+  background-image: url("../assets/image/hero-bio.jpg");
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(50, 50, 50, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.hero__title {
+  font-family: "Avenir Next Bold";
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  z-index: 1;
+  position: relative;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.about__title {
+  font-family: "Avenir Next Demi";
+  font-size: 0.875rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+.about__image {
+  width: 100%;
+}
+.about__quote {
+  font-family: "Avenir Next Bold";
+  font-size: 1rem;
+}
+.about__subtitle {
+  font-family: "Avenir Next Regular";
+  font-size: 1rem;
+}
+.about__text {
+  font-size: 0.875rem;
+  font-family: "Avenir Next Regular";
+}
+
+.gallery__gallery-item {
+  width: 100%;
+}/*# sourceMappingURL=bio.css.map */
