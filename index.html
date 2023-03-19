@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/bio.css"/>
     <title>Bandsite</title>
 </head>
@@ -11,9 +11,9 @@
 
     <header class="header">
         <nav class="header__nav">
-            <a href="" class="header__logo-link"><img class="header__logo" src="./assets/logo/Logo-bandsite.svg" alt="logo"></a>
+            <a href="index.html" class="header__logo-link"><img class="header__logo" src="./assets/logo/Logo-bandsite.svg" alt="logo"></a>
             <div class ="header__menu">
-                <a class="header__menu-link" href=""><li class="header__menu-item">Biography</li></a>
+                <a class="header__menu-link header__menu-link--active" href=""><li class="header__menu-item">Biography</li></a>
                 <a class="header__menu-link" href=""><li class="header__menu-item">Shows</li></a>
             </div>
         </nav>
@@ -55,6 +55,7 @@
                     released in late 2021.</p>
             </section>
             <section class="gallery">
+                <h2>Photo Gallery</h2>
                 <img class="gallery__gallery-item" src="./assets/image/Photo-gallery-1.jpg" alt="">
                 <img class="gallery__gallery-item" src="./assets/image/Photo-gallery-2.jpg" alt="">
                 <img class="gallery__gallery-item" src="./assets/image/Photo-gallery-3.jpg" alt="">
@@ -70,36 +71,32 @@
     <footer class="footer">
         <section class="footer__section">
             <h2 class="footer__section-title">Get in Touch</h2>
-            <img class="footer__section-social" src="./assets/Icons/SVG/Icon-instagram.svg" alt="#">
-            <img class="footer__section-social" src="./assets/Icons/SVG/Icon-facebook.svg" alt="#">
-            <img class="footer__section-social" src="./assets/Icons/SVG/Icon-twitter.svg" alt="#">
-
+            <a><img class="footer__section-social" src="./assets/Icons/SVG/Icon-instagram.svg" alt="#"></a>
+            <a><img class="footer__section-social" src="./assets/Icons/SVG/Icon-facebook.svg" alt="#"></a>
+            <a><img class="footer__section-social" src="./assets/Icons/SVG/Icon-twitter.svg" alt="#"></a>
+            <img src="./assets/logo/Logo-bandsite.svg" class="footer__logo footer__logo--toggle">
         </section>
         <div class="footer__contacts">
             <div class="footer__contact">
-                <h3 class="footer__contact-title">Cam Adams</h3>
-                <p class="footer__contact-details">The Bees Knees Management</p>
-                <p class="footer__contact-details">503 Broadway Penthouse,</p>
-                <p class="footer__contact-details">New York, NY 10012, USA</p>
+                <h3 class="footer__contact-name">Cam Adams <br> The Bees Knees Management</h3>
+                <p class="footer__contact-details">503 Broadway Penthouse, <br> New York, NY 10012, USA</p>
                 <p class="footer__contact-details">info@thebeesknees.com</p>
             </div>
             <div class="footer__contact">
-                <h3 class="footer__contact-title">Pearl Gregg</h3>
-                <p class="footer__contact-details">Limitless Artist Group</p>
-                <p class="footer__contact-details">Booking Agent for</p>
-                <p class="footer__contact-details">USA / South America / Japan</p>
+                <h3 class="footer__contact-name">Pearl Gregg <br> Limitless Artist Group</h3>
+                <p class="footer__contact-details">Booking Agent for <br> USA / South America / Japan</p>
                 <p class="footer__contact-details">pearl.gregg@limitlessag.com</p>
             </div>
             <div class="footer__contact">
-                <h3 class="footer__contact-title">Carson Whyte</h3>
-                <p class="footer__contact-details">ARCH Entertainment</p>
-                <p class="footer__contact-details">Booking Agent for</p>
-                <p class="footer__contact-details">UK / EU / AU</p>
+                <h3 class="footer__contact-name">Carson Whyte <br> ARCH Entertainment</h3>
+                <p class="footer__contact-details">Booking Agent for <br> UK / EU / AU</p>
                 <p class="footer__contact-details">cwhyte@archentertainment.com</p>
             </div>
         </div>
-        <img src="./assets/logo/Logo-bandsite.svg" class="footer__logo">
-        <p class="footer__copyright">Copyright The Bees Knees © 2021 All Rights Reserved</p>
+        <div class="footer__copyrights">
+            <img src="./assets/logo/Logo-bandsite.svg" class="footer__logo">
+            <p class="footer__copyright">Copyright The Bees Knees © 2021 All Rights Reserved</p>  
+        </div>
     </footer>
 </body>
 </html>
