@@ -61,6 +61,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  padding-top: 1rem;
 }
 .hero::before {
   content: "";
@@ -72,42 +73,69 @@
   height: 100%;
 }
 .hero__title {
-  font-family: "Avenir Next Bold";
   color: #FFFFFF;
-  font-size: 1.5rem;
   z-index: 1;
   position: relative;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Avenir Next Bold";
 }
 
-.container {
+.about {
   padding: 0 1rem;
 }
-
 .about__title {
-  font-family: "Avenir Next Demi";
-  font-size: 0.875rem;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Avenir Next Bold";
 }
 .about__image {
-  width: 100%;
+  width: 95%;
 }
 .about__quote {
-  font-family: "Avenir Next Bold";
-  font-size: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-family: "Avenir Next Demi";
+  padding-top: 1rem;
 }
 .about__subtitle {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
   font-family: "Avenir Next Regular";
-  font-size: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  color: #000000;
 }
 .about__text {
   font-size: 0.875rem;
+  line-height: 1.125rem;
   font-family: "Avenir Next Regular";
-  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.photos {
+  background-color: #FAFAFA;
+  padding: 0 1rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.gallery__heading {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .gallery__gallery-item {
   width: 100%;
+  background-color: #FAFAFA;
+  padding-bottom: 1rem;
 }
 
 .footer {
@@ -119,7 +147,7 @@
   color: #FFFFFF;
   font-size: 1.5rem;
   line-height: 2.75rem;
-  font-family: "Avenir Next Bold";
+  font-family: "Avenir Next Demi";
   padding-top: 1.5rem;
   padding-bottom: 1rem;
 }
@@ -158,6 +186,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header__nav {
+    margin-left: 5%;
+  }
   .header__logo {
     margin-right: 1rem;
   }
@@ -173,6 +204,60 @@
   .header__menu-link {
     margin-left: 2rem;
   }
+  .hero__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-family: "Avenir Next Bold";
+    padding-top: 20%;
+    padding-left: 10%;
+  }
+  .about__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-family: "Avenir Next Bold";
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 5%;
+  }
+  .about__image {
+    width: 75%;
+    margin-left: 14%;
+  }
+  .about__quote {
+    margin-left: 14%;
+    width: 75%;
+  }
+  .about__subtitle {
+    margin-left: 14%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: "Avenir Next Demi";
+  }
+  .about__texts {
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+  }
+  .about__text {
+    width: 35%;
+    padding-right: 3%;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-family: "Avenir Next Regular";
+  }
+  .gallery {
+    align-items: center;
+  }
+  .gallery__gallery-item {
+    width: 31%;
+    padding: 0.5rem;
+  }
+  .gallery__heading {
+    margin-left: 4.3%;
+  }
+  .footer {
+    padding: 0 2rem;
+  }
   .footer__section {
     display: flex;
     align-items: center;
@@ -182,11 +267,24 @@
     font-size: 2.25rem;
     line-height: 2.75rem;
     font-family: "Avenir Next Bold";
+    font-family: "Avenir Next Demi";
+  }
+  .footer__section-social {
+    padding: 1rem 0 0 1.5rem;
   }
   .footer__contacts {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .footer__contact-details {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: "Avenir Next Regular";
+  }
+  .footer__contact-name {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
   }
   .footer__contact-title {
     font-size: 1.5rem;
@@ -196,11 +294,31 @@
   .footer__copyrights {
     display: flex;
   }
+  .footer__copyright {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: "Avenir Next Regular";
+  }
   .footer__logo {
     display: none;
   }
   .footer__logo--toggle {
     display: inline-block;
     margin-left: auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 0 4rem;
+  }
+  .footer__contacts {
+    justify-content: start;
+  }
+  .footer__contact {
+    margin-right: 12%;
+  }
+  .footer__copyrights {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }/*# sourceMappingURL=bio.css.map */

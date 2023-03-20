@@ -1,0 +1,68 @@
+// Mixins 
+@mixin labels-m {
+    font-size: 0.625rem;
+    line-height: 1.25rem;
+    font-family: "Avenir Next Bold";
+}
+
+@mixin labels-tab {
+    font-size: .75rem;
+    line-height: 1.25rem;
+    font-family: "Avenir Next Bold";
+}
+
+@mixin body-footer-m {
+    font-size: 0.8125rem;
+    line-height: 1.375rem;
+    font-family: "Avenir Next Regular";
+}
+
+@mixin footer-tab {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-family: "Avenir Next Regular";
+}
+
+    
+@mixin body-copy-m {
+    font-size: .8125rem;
+    line-height: 1.375rem;
+    font-family: "Avenir Next Regular";
+}
+
+@mixin body-copy-tab {
+    font-size: .875rem;
+    line-height: 1.125rem;
+    font-family: "Avenir Next Regular";
+}
+
+@mixin subheader-m {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: "Avenir Next Demi";
+}
+
+@mixin subheader-tab {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: "Avenir Next Demi";
+}
+
+
+@mixin header-m {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: "Avenir Next Bold";
+}
+
+@mixin section-tab {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-family: "Avenir Next Bold";
+}
+
+@mixin header-tab {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-family: "Avenir Next Bold";
+}
