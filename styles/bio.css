@@ -137,6 +137,76 @@
   padding-bottom: 1rem;
 }
 
+.wrapper {
+  padding: 0 1rem;
+}
+
+.conversation {
+  padding-bottom: 1rem;
+  border-bottom: 0.1rem solid #e1e1e1;
+  margin-bottom: 1rem;
+}
+.conversation__title {
+  font-family: "Avenir Next Demi";
+  font-size: 1.7rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  letter-spacing: 0.05rem;
+}
+.conversation__image {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 100%;
+  margin-top: 1.23rem;
+}
+.conversation__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #afafaf;
+  align-items: end;
+}
+.conversation__wrapper {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.conversation__wrapper-inner {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-left: 1rem;
+}
+.conversation__div {
+  width: 100%;
+}
+.conversation__textarea {
+  width: 95%;
+  height: 7rem;
+  margin-bottom: 1rem;
+}
+.conversation__input {
+  margin-bottom: 1rem;
+  height: 2.4rem;
+  width: 95%;
+}
+.conversation__label {
+  font-family: "Avenir Next Demi";
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+.conversation__button {
+  font-family: "Avenir Next Demi";
+  width: 95%;
+  padding: 1rem;
+  color: #FFF;
+  border: none;
+  background-color: #323232;
+  border-radius: 0.25rem;
+  font-size: 1.3rem;
+}
+
 .footer {
   background-color: #323232;
   padding: 0 1rem;
