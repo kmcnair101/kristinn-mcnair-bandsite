@@ -117,12 +117,12 @@
 }
 .wrapper {
     padding: 0 1rem;
+    margin-bottom: 1rem;
 }
 
 .conversation {
     padding-bottom: 1rem;
-    border-bottom: 0.1rem solid #e1e1e1;
-    margin-bottom: 1rem;
+    border-bottom: 0.13rem solid #e1e1e1;
     &__title {
         font-family: "Avenir Next Demi";
         font-size: 1.7rem;
@@ -133,13 +133,12 @@
     &__image {
         width: 2.8rem;
         height: 2.8rem;
-        border-radius: 100%;
+        border-radius: 50%;
         margin-top: 1.23rem;
     }
     &__form {
         display: flex;
         flex-direction: column;
-        width: 100%;
         color: #afafaf;
         align-items: end;
     }
@@ -160,14 +159,12 @@
         width: 100%;
     }
     &__textarea {
-        width: 95%;
         height: 7rem;
         margin-bottom: 1rem;
     }
     &__input {
         margin-bottom: 1rem;
         height: 2.4rem;
-        width: 95%
     }
     &__label {
         font-family: "Avenir Next Demi";
@@ -176,13 +173,41 @@
     }
     &__button {
         font-family: "Avenir Next Demi";
-        width: 95%;
         padding: 1rem;
         color: #FFF;
         border: none;
         background-color: #323232;
         border-radius: 0.25rem;
         font-size: 1.3rem;
+    }
+}
+
+.post {
+    border-bottom: 0.13rem solid #e1e1e1;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    &__image {
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 50%;
+        background-color: #e1e1e1;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.1rem;
+        width: 100%;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.8rem;
+    }
+    &__date {
+        color: #e1e1e1;
+ 
     }
 }
 
