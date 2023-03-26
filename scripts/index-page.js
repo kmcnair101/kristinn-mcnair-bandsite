@@ -1,3 +1,7 @@
+//Grabbing the form element and post sections
+const form = document.querySelector('.conversation__form');
+const posts = document.querySelector('.posts')
+
 //Initial comments
 const comments = [
     {
@@ -12,40 +16,16 @@ const comments = [
 }, 
     {
     name: "Connor Walton", 
-    dategit: "02/17/2021",
+    date: "02/17/2021",
     comment: "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains."
     }
 ] 
 
-//Grabbing the form element and post sections
-const form = document.querySelector('.conversation__form');
-const posts = document.querySelector('.posts')
 
-//Function to run when form is submitted
-const formFunction = (event) => {
-    event.preventDefault();
-    //Getting the value from the input
-    const nameInput = document.querySelector('#name');
-    const commentInput = document.querySelector("#comment")
-    //creating an object
-    const postObject = {
-        name: nameInput.value,
-        date: new Date(),
-        comment: commentInput.value
-    };
-    //pushing the object into the array of objects
-    comments.push(postObject);
-
-    nameInput.value = "";
-    commentInput.value = "";
-
-}
-//Event listener for form submission
-form.addEventListener('submit', formFunction)
 
 //Takes comment and creates article with elements inside using innerHTML and template literals
 const displayComment = (comment) => {
-    post = document.createElement('article');
+    let post = document.createElement('article');
     post.className = "post";
     post.innerHTML = `
         <div src="#" class="post__image"></div>
@@ -66,3 +46,29 @@ const render = () => {
         displayComment(comment);
     }
 }
+//Function to run when form is submitted
+const formFunction = (event) => {
+    //prevents default action
+    event.preventDefault();
+    //Getting the value from the input
+    const nameInput = document.querySelector('#name');
+    const commentInput = document.querySelector("#comment")
+    //creating an object
+    const postObject = {
+        name: nameInput.value,
+        date: new Date(),
+        comment: commentInput.value
+    };
+    //pushing the object into the array of objects
+    comments.push(postObject);
+
+    //resetting the value
+    nameInput.value = "";
+    commentInput.value = "";
+    render();
+
+}
+//Event listener for form submission
+form.addEventListener('submit', formFunction)
+
+render();
