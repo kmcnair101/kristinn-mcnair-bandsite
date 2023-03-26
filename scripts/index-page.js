@@ -40,9 +40,10 @@ const formFunction = (event) => {
     commentInput.value = "";
 
 }
+//Event listener for form submission
+form.addEventListener('submit', formFunction)
 
-form.addEventListener('submit', )
-
+//Takes comment and creates article with elements inside using innerHTML and template literals
 const displayComment = (comment) => {
     post = document.createElement('article');
     post.className = "post";
@@ -56,4 +57,12 @@ const displayComment = (comment) => {
             <p class="post__comment">${comment.comment}</p>
         </div>`;
     posts.appendChild(post);
+}
+
+//Updates sections
+const render = () => {
+    posts.innerHTML = ""
+    for (const comment of comments) {
+        displayComment(comment);
+    }
 }
