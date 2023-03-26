@@ -22,8 +22,8 @@ const comments = [
 ] 
 
 //Takes comment and creates article with elements inside using innerHTML and template literals
-const displayComment = (comment) => {
-    let post = document.createElement('article');
+const displayComment = comment => {
+    const post = document.createElement('article');
     post.className = "post";
     //Use the new Date on comment date to change the presented format
     const newDate = new Date(comment.date);
@@ -50,7 +50,7 @@ const render = () => {
     }
 }
 //Function to run when form is submitted
-const formFunction = (event) => {
+const formFunction = event => {
     //prevents default action
     event.preventDefault();
     //Getting the elements
