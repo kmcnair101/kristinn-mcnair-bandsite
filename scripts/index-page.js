@@ -12,29 +12,48 @@ const comments = [
 }, 
     {
     name: "Connor Walton", 
-    date: "02/17/2021",
+    dategit: "02/17/2021",
     comment: "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains."
     }
 ] 
 
 //Grabbing the form element and post sections
 const form = document.querySelector('.conversation__form');
-const post = document.querySelector('.posts')
+const posts = document.querySelector('.posts')
 
 //Function to run when form is submitted
 const formFunction = (event) => {
     event.preventDefault();
-
+    //Getting the value from the input
     const nameInput = document.querySelector('#name');
     const commentInput = document.querySelector("#comment")
-
+    //creating an object
     const postObject = {
         name: nameInput.value,
         date: new Date(),
         comment: commentInput.value
     };
-
+    //pushing the object into the array of objects
     comments.push(postObject);
+
+    nameInput.value = "";
+    commentInput.value = "";
+
 }
 
 form.addEventListener('submit', )
+
+const displayComment = (comment) => {
+    post = document.createElement('article');
+    post.className = "post";
+    post.innerHTML = `
+        <div src="#" class="post__image"></div>
+        <div class="post__content">
+            <div class="post__header">
+                <h3 class="post__name">${comment.name}</h3>
+                <p class="post__date">${comment.date}</p>
+            </div>
+            <p class="post__comment">${comment.comment}</p>
+        </div>`;
+    posts.appendChild(post);
+}
