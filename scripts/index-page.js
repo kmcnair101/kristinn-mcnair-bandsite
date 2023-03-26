@@ -21,18 +21,20 @@ const comments = [
 }  
 ] 
 
-
-
 //Takes comment and creates article with elements inside using innerHTML and template literals
 const displayComment = (comment) => {
     let post = document.createElement('article');
     post.className = "post";
+    //Use the new Date on comment date to change the presented format
+    const newDate = new Date(comment.date);
+    const commentDate = `${newDate.getMonth() + 1}/${newDate.getDate()}/${newDate.getFullYear()}`;
+
     post.innerHTML = `
         <div src="#" class="post__image"></div>
         <div class="post__content">
             <div class="post__header">
                 <h3 class="post__name">${comment.name}</h3>
-                <p class="post__date">${comment.date}</p>
+                <p class="post__date">${commentDate}</p>
             </div>
             <p class="post__comment">${comment.comment}</p>
         </div>`;
@@ -40,7 +42,7 @@ const displayComment = (comment) => {
     posts.appendChild(post);
 }
 
-//Updates sections
+//Updates sections and loops through array of objects
 const render = () => {
     posts.innerHTML = ""
     for (const comment of comments) {
@@ -57,7 +59,7 @@ const formFunction = (event) => {
     //creating an object
     const postObject = {
         name: nameInput.value,
-        date: new Date(),
+        date: new Date(), 
         comment: commentInput.value
     };
     //pushing the object to the start of the array of objects
