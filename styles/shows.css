@@ -70,7 +70,7 @@
   height: 100%;
 }
 .hero__title {
-  padding: 0rem 0 1.2rem 1.5rem;
+  padding: 0rem 0 1.2rem 1rem;
   font-size: 2rem;
   color: #FFFFFF;
   position: relative;
@@ -88,6 +88,43 @@
 .hero__iframe {
   width: 100%;
   padding: 1rem 1rem 0 1rem;
+}
+
+.shows {
+  margin: 0 1rem 0 1rem;
+}
+.shows__heading {
+  margin: 2rem 0 2.5rem 0;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  font-family: "Avenir Next Demi";
+}
+
+.table {
+  width: 100%;
+}
+.table__row {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.table__data {
+  width: 100%;
+}
+.table__button {
+  border: none;
+  width: 95%;
+  font-family: "Avenir Next Demi";
+  padding: 1rem;
+  color: #FFF;
+  border: none;
+  background-color: #323232;
+  border-radius: 0.25rem;
+  font-size: 1.3rem;
+}
+.table__head {
+  display: none;
 }
 
 .footer {
