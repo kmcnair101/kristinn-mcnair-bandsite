@@ -91,11 +91,10 @@
 }
 
 .shows {
-  margin: 0 1rem 0 1rem;
+  margin-bottom: 1rem;
 }
 .shows__heading {
-  margin: 2rem 0 2.5rem 0;
-  margin-bottom: 2.5rem;
+  padding: 2rem 0 2rem 1rem;
   font-size: 2rem;
   margin-left: 0.5rem;
   font-family: "Avenir Next Demi";
@@ -108,13 +107,21 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+  padding: 0 1rem;
+  border-bottom: 0.1rem solid #e1e1e1;
 }
 .table__data {
+  font-size: 1.2rem;
   width: 100%;
+  padding-bottom: 1.5rem;
+}
+.table__data--demi {
+  font-family: "Avenir Next Demi";
 }
 .table__button {
   border: none;
   width: 95%;
+  margin: 0 3%;
   font-family: "Avenir Next Demi";
   padding: 1rem;
   color: #FFF;
@@ -122,6 +129,11 @@
   background-color: #323232;
   border-radius: 0.25rem;
   font-size: 1.3rem;
+}
+.table__header {
+  color: #afafaf;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 .table__head {
   display: none;
