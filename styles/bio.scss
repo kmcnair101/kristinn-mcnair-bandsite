@@ -153,7 +153,6 @@
         width: 90%;
         padding-left: 1rem;
     }
- 
     &__div {
         width: 100%;
     }
@@ -206,7 +205,6 @@
     }
     &__date {
         color: #e1e1e1;
- 
     }
 }
 
@@ -330,6 +328,10 @@
         &__heading {
             margin-left: 4.3%;
         }
+    }
+    .wrapper {
+        width: 80vw;
+        margin: 1rem auto;
     }
     .footer {
         padding: 0 2rem;

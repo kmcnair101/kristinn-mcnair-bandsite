@@ -101,6 +101,7 @@
         align-items: start;
         padding: 0 1rem;
         border-bottom: 0.1rem solid #e1e1e1;
+        padding-top: 1.5rem;
     }
 
     &__data {
@@ -130,6 +131,7 @@
     }
     &__head {
         display: none;
+        color: #AFAFAF;
     }
 }
 
@@ -207,53 +209,54 @@
     }
     }
     .hero {
+        padding-left: 2rem;
         &__title {
-            @include header-tab; 
-            padding-top: 20%;
-            padding-left: 10%;
-        }
-        
-    }
-    .about {
-        &__title {
-            @include section-tab;
-            padding-top: 1.5rem;
-            padding-bottom: 1rem;
-            padding-left: 5%;
-        }
-        &__image {
-            width: 75%;
-            margin-left: 14%;
-        }
-        &__quote {
-            margin-left: 14%;
-            width: 75%;
+            font-size: 3rem;
         }
         &__subtitle {
-            margin-left: 14%;
-            @include subheader-tab;
+            font-size: 1.4rem;
         }
-        &__texts {
+        &__iframe {
+            width: 50%;
+        }
+    }
+    .table {
+        &__head {
+            display: block;
+            padding-left: 1.5rem;
+        }
+        &__main-row {
             display: flex;
-            justify-content: center;
-            margin-right: 5%;
+            justify-content: space-around;
+            padding-right: 8rem;
         }
-        &__text {
-            width: 35%;
-            padding-right: 3%;
-            @include body-copy-tab;
+        &__main-header {
+            padding-right: 3rem;
+        }
+        &__header {
+            display: none;
+        }
+        &__body {
+            display: flex;
+            flex-direction: column;
+        }
+        &__data {
+            padding: 0 1rem;
+        }
+        &__row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+        }
+        &__button {
+            font-size: 1rem;
+            margin: 0 0 1rem 0;
+        }
         }
     }
-    .gallery {
-        align-items: center;
-            &__gallery-item {
-                width: 31%;
-                padding: 0.5rem;
-    }
-        &__heading {
-            margin-left: 4.3%;
-        }
-    }
+
+
     .footer {
         padding: 0 2rem;
         &__section {
@@ -298,9 +301,13 @@
             margin-left: auto;
         }
     }
-}
 
 @media screen and (min-width: 1280px) {
+    .table {
+        width: 70%;
+        margin-right: 7%;
+        margin-left: auto;
+    }
     .footer {
         padding: 0 4rem;
         &__contacts {

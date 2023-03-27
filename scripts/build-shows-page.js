@@ -48,6 +48,7 @@ const tableMainRow = document.createElement('tr');
 const tableMainHeader1 = document.createElement('th');
 const tableMainHeader2 = document.createElement('th');
 const tableMainHeader3 = document.createElement('th');
+const tableMainHeader4 = document.createElement('th');
 //adding class names to the elements
 table.className = "table";
 thead.className = "table__head";
@@ -55,14 +56,17 @@ tableMainRow.className = "table__main-row";
 tableMainHeader1.className = "table__main-header";
 tableMainHeader2.className = "table__main-header";
 tableMainHeader3.className = "table__main-header";
+tableMainHeader4.className = "table__main-header";
 //adding innner html
 tableMainHeader1.innerHTML = "DATE";
 tableMainHeader2.innerHTML = "VENUE";
 tableMainHeader3.innerHTML = "LOCATION";
+tableMainHeader4.innerHTML = "";
 //appending them to table head element and then to the body
 tableMainRow.appendChild(tableMainHeader1);
 tableMainRow.appendChild(tableMainHeader2);
 tableMainRow.appendChild(tableMainHeader3);
+tableMainRow.appendChild(tableMainHeader4);
 
 thead.appendChild(tableMainRow);
 table.append(thead);

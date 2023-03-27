@@ -109,6 +109,7 @@
   align-items: start;
   padding: 0 1rem;
   border-bottom: 0.1rem solid #e1e1e1;
+  padding-top: 1.5rem;
 }
 .table__data {
   font-size: 1.2rem;
@@ -137,6 +138,7 @@
 }
 .table__head {
   display: none;
+  color: #AFAFAF;
 }
 
 .footer {
@@ -209,110 +211,109 @@
   .header__menu-link--active {
     border-bottom: 0.13rem solid #FFFFFF;
   }
+  .hero {
+    padding-left: 2rem;
+  }
   .hero__title {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-    font-family: "Avenir Next Bold";
-    padding-top: 20%;
-    padding-left: 10%;
+    font-size: 3rem;
   }
-  .about__title {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-    font-family: "Avenir Next Bold";
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-    padding-left: 5%;
+  .hero__subtitle {
+    font-size: 1.4rem;
   }
-  .about__image {
-    width: 75%;
-    margin-left: 14%;
+  .hero__iframe {
+    width: 50%;
   }
-  .about__quote {
-    margin-left: 14%;
-    width: 75%;
+  .table__head {
+    display: block;
+    padding-left: 1.5rem;
   }
-  .about__subtitle {
-    margin-left: 14%;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-family: "Avenir Next Demi";
-  }
-  .about__texts {
+  .table__main-row {
     display: flex;
-    justify-content: center;
-    margin-right: 5%;
+    justify-content: space-around;
+    padding-right: 8rem;
   }
-  .about__text {
-    width: 35%;
-    padding-right: 3%;
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-    font-family: "Avenir Next Regular";
+  .table__main-header {
+    padding-right: 3rem;
   }
-  .gallery {
-    align-items: center;
-  }
-  .gallery__gallery-item {
-    width: 31%;
-    padding: 0.5rem;
-  }
-  .gallery__heading {
-    margin-left: 4.3%;
-  }
-  .footer {
-    padding: 0 2rem;
-  }
-  .footer__section {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-  }
-  .footer__section-title {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-    font-family: "Avenir Next Bold";
-    font-family: "Avenir Next Demi";
-  }
-  .footer__section-social {
-    padding: 1rem 0 0 1.5rem;
-  }
-  .footer__contacts {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .footer__contact-details {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-family: "Avenir Next Regular";
-  }
-  .footer__contact-name {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-  }
-  .footer__contact-title {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-family: "Avenir Next Demi";
-  }
-  .footer__copyrights {
-    display: flex;
-  }
-  .footer__copyright {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-family: "Avenir Next Regular";
-  }
-  .footer__logo {
+  .table__header {
     display: none;
   }
-  .footer__logo--toggle {
-    display: inline-block;
-    margin-left: auto;
+  .table__body {
+    display: flex;
+    flex-direction: column;
+  }
+  .table__data {
+    padding: 0 1rem;
+  }
+  .table__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  .table__button {
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
   }
 }
+.footer {
+  padding: 0 2rem;
+}
+.footer__section {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.footer__section-title {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  font-family: "Avenir Next Bold";
+  font-family: "Avenir Next Demi";
+}
+.footer__section-social {
+  padding: 1rem 0 0 1.5rem;
+}
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__contact-details {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-family: "Avenir Next Regular";
+}
+.footer__contact-name {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+.footer__contact-title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Avenir Next Demi";
+}
+.footer__copyrights {
+  display: flex;
+}
+.footer__copyright {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-family: "Avenir Next Regular";
+}
+.footer__logo {
+  display: none;
+}
+.footer__logo--toggle {
+  display: inline-block;
+  margin-left: auto;
+}
+
 @media screen and (min-width: 1280px) {
+  .table {
+    width: 70%;
+    margin-right: 7%;
+    margin-left: auto;
+  }
   .footer {
     padding: 0 4rem;
   }
