@@ -1,7 +1,6 @@
 @use 'partials/global' as *;
 @use 'partials/variables' as *;
 @use 'partials/mixins' as *;
-@use 'partials/typography' as *;
 
 .header {
     background-color: #323232;
@@ -114,10 +113,7 @@
     background-color: $secondary-color3;
     padding-bottom: 1rem;
 }
-.wrapper {
-    padding: 0 1rem;
-    margin-bottom: 1rem;
-}
+
 
 .conversation {
     padding-bottom: 1rem;
@@ -330,8 +326,9 @@
         }
     }
     .wrapper {
-        width: 80vw;
+        width: 80%;
         margin: 1rem auto;
+    }
     }
     .footer {
         padding: 0 2rem;
@@ -377,7 +374,7 @@
             margin-left: auto;
         }
     }
-}
+
 
 @media screen and (min-width: 1280px) {
     .footer {
