@@ -1,5 +1,6 @@
 const apiKey = "d5f5c387-62f7-48ea-abf2-eec461dc3393";
 
+
 //Grabbing the form element and post sections
 const form = document.querySelector('.conversation__form');
 const posts = document.querySelector('.posts')
@@ -62,7 +63,7 @@ const formFunction = event => {
     const postObject = {
         name: data.value,
         timestamp: Date.now(), 
-        comment: data.value
+        comment: data.comment
     };
     axios.post(`https://project-1-api.herokuapp.com/comments?api_key=${apiKey}`, data)
         .then(response => {
