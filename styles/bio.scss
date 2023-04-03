@@ -10,7 +10,7 @@
         flex-direction: column;
         align-items: center;
         padding-top: 1.5rem;
-        font-family: Avenir;
+        font-family: Avenir, Geneva, sans-serif;
     }
     &__menu {
         display: flex;
@@ -60,7 +60,7 @@
         padding-top: 9rem;
         padding-left: 2.5rem;
         font-size: 2.5rem;
-        font-family: "Avenir Next Demi";
+        font-family: "Avenir Next Demi", Geneva, sans-serif;
     }
 }
 
@@ -119,7 +119,7 @@
     padding-bottom: 1rem;
     border-bottom: 0.13rem solid #e1e1e1;
     &__title {
-        font-family: "Avenir Next Demi";
+        font-family: "Avenir Next Demi", Geneva, sans-serif;
         font-size: 1.7rem;
         padding-top: 1.5rem;
         padding-bottom: 1rem;
@@ -159,20 +159,28 @@
     &__input {
         margin-bottom: 1rem;
         height: 2.4rem;
+        &:active,
+        &:focus {
+            border: .0625rem solid #323232;
+        }
     }
     &__label {
-        font-family: "Avenir Next Demi";
+        font-family: "Avenir Next Demi", Geneva, sans-serif;
         font-size: 0.9rem;
         margin-bottom: 0.3rem;
     }
     &__button {
-        font-family: "Avenir Next Demi";
+        font-family: "Avenir Next Demi", Geneva, sans-serif;
         padding: 1rem;
         color: #FFF;
         border: none;
         background-color: #323232;
         border-radius: 0.25rem;
         font-size: 1.3rem;
+        &:hover {
+            color: #FFF;
+            background-color: #000;
+        }
     }
 }
 
@@ -212,7 +220,7 @@
         color:$primary-color3;
         font-size: 1.5rem;
         line-height: 2.75rem;
-        font-family: "Avenir Next Demi";
+        font-family: "Avenir Next Demi" Geneva, sans-serif;
         padding-top: 1.5rem;
         padding-bottom: 1rem;
     }
@@ -223,7 +231,7 @@
     &__contact {
         &-name {
         font-size: .875rem; 
-        font-family: "Avenir Next Demi";
+        font-family: "Avenir Next Demi", Geneva, sans-serif;
         color: $secondary-color3; 
         padding-top: 1.5rem;
         line-height: 1.125rem;
@@ -338,7 +346,7 @@
             justify-content: start;
                 &-title {
                     @include section-tab;
-                    font-family: "Avenir Next Demi";
+                    font-family: "Avenir Next Demi", Geneva, sans-serif;
             }
             &-social {
                 padding: 1rem 0 0 1.5rem;

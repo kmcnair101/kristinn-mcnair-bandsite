@@ -13,7 +13,7 @@ let comments = [];
 //Takes comment and creates article with elements inside using innerHTML and template literals
 const displayComment = comment => {
     const post = document.createElement('article');
-    post.className = "post";
+    post.classList.add("post");
     //Use the new Date on comment date to change the presented format
     const newDate = new Date(comment.timestamp);
     const commentDate = `${newDate.getMonth() + 1}/${newDate.getDate()}/${newDate.getFullYear()}`;

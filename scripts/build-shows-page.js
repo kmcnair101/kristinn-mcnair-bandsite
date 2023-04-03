@@ -2,14 +2,19 @@ const apiKey = "d5f5c387-62f7-48ea-abf2-eec461dc3393";
 
 axios.get(`https://project-1-api.herokuapp.com/showdates?api_key=${apiKey}`)
     .then( response => {
+        
+        const showsSection = document.createElement('section');
+        showsSection.classList.add("shows");
+
+        const heroSection = document.querySelector('.hero');
+        heroSection.parentNode.insertBefore(showsSection, heroSection.nextSibling);
+        
         //Creating an element and appending it
-        const showsSection = document.querySelector('.shows');
         const showsHeading = document.createElement('h2');
         showsHeading.innerHTML = "Shows";
-        showsHeading.className = "shows__heading";
+        showsHeading.classList.add("shows__heading");
 
         showsSection.appendChild(showsHeading);
-        console.log("hello");
 
 
         //creating a table and table head elements
@@ -21,13 +26,13 @@ axios.get(`https://project-1-api.herokuapp.com/showdates?api_key=${apiKey}`)
         const tableMainHeader3 = document.createElement('th');
         const tableMainHeader4 = document.createElement('th');
         //adding class names to the elements
-        table.className = "table";
-        thead.className = "table__head";
-        tableMainRow.className = "table__main-row";
-        tableMainHeader1.className = "table__main-header";
-        tableMainHeader2.className = "table__main-header";
-        tableMainHeader3.className = "table__main-header";
-        tableMainHeader4.className = "table__main-header";
+        table.classList.add("table");
+        thead.classList.add("table__head");
+        tableMainRow.classList.add("table__main-row");
+        tableMainHeader1.classList.add("table__main-header");
+        tableMainHeader2.classList.add("table__main-header");
+        tableMainHeader3.classList.add("table__main-header");
+        tableMainHeader4.classList.add("table__main-header");
         //adding innner html
         tableMainHeader1.innerHTML = "DATE";
         tableMainHeader2.innerHTML = "VENUE";
@@ -45,7 +50,7 @@ axios.get(`https://project-1-api.herokuapp.com/showdates?api_key=${apiKey}`)
 
         //creating table 
         const tbody = document.createElement('tbody');
-        tbody.className = "table__body";
+        tbody.classList.add("table__body");
         
         //using a for of loop to iterate through array to set inner html using template literals
         for (show of response.data) {
@@ -55,7 +60,7 @@ axios.get(`https://project-1-api.herokuapp.com/showdates?api_key=${apiKey}`)
             const showDate = date.toLocaleDateString('en-US', options);
             
 
-            tableRow.className = "table__row";
+            tableRow.classList.add("table__row");
             tableRow.innerHTML = `    
             <tr class="table__row">
             <th class="table__header">DATE</th>

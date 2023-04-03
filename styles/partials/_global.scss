@@ -34,12 +34,16 @@
         padding-bottom: 1rem;
         width: 50%;
         text-align: center;
+        &:hover {
+            color:#FFF
+        }
     }
     &__menu-link--active {
         font-weight: 700;
         color: $primary-color3;
         border-bottom: 0.23rem solid $primary-color3;
     }
+
 }
 
 .footer {
